@@ -1,0 +1,131 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grad-soft);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* floating deco emojis */
+.page::before {
+  content: '🌸 ✨ 💖 🦋 🌟 💜 🌸 ✨ 💕 ⭐';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  font-size: 1.6rem;
+  letter-spacing: 28px;
+  opacity: .18;
+  pointer-events: none;
+  padding: 20px;
+  line-height: 3;
+  word-break: break-all;
+}
+
+.themeBtn {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  color: var(--text2);
+  padding: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  transition: background .15s, color .15s, transform .15s;
+  box-shadow: var(--shadow);
+}
+.themeBtn:hover { background: var(--surface2); color: var(--accent); transform: scale(1.1); }
+
+.card {
+  background: var(--surface);
+  border-radius: 24px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: var(--shadow-pop);
+  border: 2px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.logo { font-size: 2.8rem; filter: drop-shadow(0 4px 8px rgba(224,64,160,.3)); }
+.brand h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.6rem;
+  background: var(--grad-btn);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-top: 10px;
+}
+.brand p { color: var(--text2); font-size: .875rem; margin-top: 5px; font-weight: 600; }
+
+.tabs {
+  display: flex;
+  background: var(--surface2);
+  border-radius: 14px;
+  padding: 4px;
+  margin-bottom: 24px;
+  border: 1.5px solid var(--border);
+}
+.tabs button {
+  flex: 1;
+  background: none;
+  border: none;
+  padding: 9px;
+  border-radius: 11px;
+  font-size: .875rem;
+  font-weight: 700;
+  color: var(--text2);
+  transition: background .15s, color .15s, box-shadow .15s;
+}
+.tabs .active {
+  background: var(--grad-btn);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(224,64,160,.3);
+}
+
+.form { display: flex; flex-direction: column; gap: 16px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: .8rem; font-weight: 700; color: var(--text2); }
+.field input {
+  background: var(--surface2);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 11px 14px;
+  font-size: .9rem;
+  font-weight: 600;
+  color: var(--text);
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+.submit {
+  background: var(--grad-btn);
+  color: #fff;
+  border: none;
+  padding: 13px;
+  border-radius: 14px;
+  font-size: .95rem;
+  font-weight: 800;
+  margin-top: 4px;
+  box-shadow: 0 4px 16px rgba(224,64,160,.35);
+  transition: transform .15s, box-shadow .15s, filter .15s;
+}
+.submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(224,64,160,.45);
+  filter: brightness(1.05);
+}
+.submit:disabled { opacity: .6; cursor: not-allowed; }

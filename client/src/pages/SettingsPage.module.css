@@ -1,0 +1,104 @@
+.page { display: flex; flex-direction: column; gap: 28px; max-width: 560px; }
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.4rem;
+  background: var(--grad-btn);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: var(--shadow);
+}
+.section h3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 1rem;
+  background: var(--grad-btn);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.avatarRow { display: flex; align-items: center; gap: 16px; }
+
+.avatar {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: var(--grad-btn);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 0 3px var(--accent), var(--shadow);
+}
+.avatar img { width: 100%; height: 100%; object-fit: cover; }
+
+.avatarBtn {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: .875rem;
+  cursor: pointer;
+  transition: background .15s;
+}
+.avatarBtn:hover { background: var(--border); }
+
+.form { display: flex; flex-direction: column; gap: 14px; }
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field label { font-size: .8rem; font-weight: 500; color: var(--text2); }
+.field input {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: .9rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color .15s;
+}
+.field input:focus { border-color: var(--accent); }
+
+.saveBtn {
+  background: var(--grad-btn);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 12px;
+  font-size: .875rem;
+  font-weight: 700;
+  align-self: flex-start;
+  box-shadow: 0 4px 14px rgba(224,64,160,.3);
+  transition: transform .15s, box-shadow .15s;
+}
+.saveBtn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(224,64,160,.4); }
+.saveBtn:disabled { opacity: .6; cursor: not-allowed; }
+
+.storageInfo { font-size: .9rem; font-weight: 500; }
+
+.storageBar {
+  height: 8px;
+  background: var(--surface2);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.storageUsed {
+  height: 100%;
+  background: var(--grad-btn);
+  border-radius: 99px;
+  transition: width .4s;
+}
+
+.storageLabel { color: var(--text2); font-size: .8rem; }
