@@ -131,17 +131,22 @@ npm run dev
 
 <div align="center">
 
-### 🏠 Dashboard
-![Dashboard](https://via.placeholder.com/800x400/4a5568/ffffff?text=PhotoHub+Dashboard)
+> 📸 **Screenshots coming soon!** 
+> 
+> Take some screenshots of your PhotoHub application and add them here to showcase:
+> - 🏠 **Dashboard** - Main photo management interface
+> - 📸 **Photo Grid** - Beautiful grid view of photos
+> - 📁 **Albums** - Album organization and management
+> - 🌙 **Dark Mode** - Elegant dark theme support
+> - 📱 **Mobile View** - Responsive design on mobile devices
 
-### 📸 Photo Grid
-![Photo Grid](https://via.placeholder.com/800x400/2d3748/ffffff?text=Photo+Grid+View)
+**To add screenshots:**
+1. Take screenshots of your running application
+2. Create a `screenshots/` folder in your repository
+3. Save images as: `dashboard.png`, `photo-grid.png`, `albums.png`, `dark-mode.png`
+4. Update the README with: `![Dashboard](screenshots/dashboard.png)`
 
-### 📁 Albums
-![Albums](https://via.placeholder.com/800x400/1a202c/ffffff?text=Album+Management)
-
-### 🌙 Dark Mode
-![Dark Mode](https://via.placeholder.com/800x400/000000/ffffff?text=Dark+Theme+Support)
+**Alternative:** Upload to GitHub Issues and copy the generated URLs, or use services like [Imgur](https://imgur.com) for hosting.
 
 </div>
 
