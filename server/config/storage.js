@@ -1,7 +1,6 @@
 const multer = require('multer');
 const multerS3 = require('multer-s3');
-const { S3Client, DeleteObjectCommand, GetObjectCommand } = require('@aws-sdk/client-s3');
-const { getSignedUrl } = require('@aws-sdk/s3-request-presigner');
+const { S3Client, DeleteObjectCommand } = require('@aws-sdk/client-s3');
 const path = require('path');
 
 const s3 = new S3Client({
@@ -35,13 +34,4 @@ const deleteFromS3 = async (key) => {
   }));
 };
 
-// Generate signed URL (expires in 1 hour)
-const getSignedImageUrl = async (key) => {
-  const command = new GetObjectCommand({
-    Bucket: process.env.AWS_BUCKET_NAME,
-    Key: key,
-  });
-  return await getSignedUrl(s3, command, { expiresIn: 3600 });
-};
-
-module.exports = { upload, deleteFromS3, getSignedImageUrl };
+module.exports = { upload, deleteFromS3 };
