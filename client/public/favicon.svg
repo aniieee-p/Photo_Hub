@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Camera body -->
+  <rect x="3" y="9" width="26" height="18" rx="4" fill="#f9a8d4"/>
+  <!-- Camera body shine -->
+  <rect x="3" y="9" width="26" height="6" rx="4" fill="#fce7f3" opacity="0.5"/>
+  <!-- Lens outer -->
+  <circle cx="16" cy="18" r="6" fill="#be185d"/>
+  <!-- Lens mid -->
+  <circle cx="16" cy="18" r="4.2" fill="#ec4899"/>
+  <!-- Lens inner -->
+  <circle cx="16" cy="18" r="2.5" fill="#fce7f3"/>
+  <!-- Lens highlight -->
+  <circle cx="14.8" cy="16.8" r="1" fill="white" opacity="0.8"/>
+  <!-- Viewfinder bump -->
+  <rect x="11" y="5" width="10" height="5" rx="2.5" fill="#f9a8d4"/>
+  <!-- Flash -->
+  <rect x="5" y="11.5" width="3.5" height="2.5" rx="1" fill="#fce7f3"/>
+  <!-- Small star sparkle top-right -->
+  <text x="22" y="10" font-size="6" fill="#fb7185">✦</text>
+  <!-- Small heart -->
+  <text x="4" y="26" font-size="6" fill="#fce7f3">♡</text>
+</svg>
